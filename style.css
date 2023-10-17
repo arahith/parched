@@ -1,0 +1,75 @@
+    html {
+        background: url('./background.jpg') no-repeat center fixed;     
+        background-size: cover;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .grid-contain {
+        position: relative;
+    }
+
+    h1 {
+        font-family: 'Vast Shadow', serif;
+        font-size: 4rem;
+        color: black;
+        text-shadow: 3px 3px darkgoldenrod;
+    }
+
+    h3 {
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: darkgoldenrod;
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    .content {
+        background-color: darkgoldenrod;
+        border-radius: 5px;
+    }
+
+    h2 {
+        margin: 7px;
+        padding-top: 10px;
+    }
+
+    p {
+        margin: 7px;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    a {
+        color: darkcyan;
+    }
+
+    @media (min-width: 800px) {
+        .grid-contain {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 20px;
+        }
+
+        #setting {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        #system {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        #clear {
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+    }
